@@ -1,5 +1,5 @@
 {
-  "checksum": "2060daaa75dca50ce95b3ef05699b7eb",
+  "checksum": "45d0e3e66f1ef15be9fa7ec422dc424c",
   "root": "memory-game@link-dev:./esy.json",
   "node": {
     "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79@d41d8cd9": {
@@ -39,7 +39,7 @@
       "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.12.0@d41d8cd9",
+        "ocaml@4.12.0@d41d8cd9", "@opam/ounit2@opam:2.2.4@1877225e",
         "@opam/ocaml-lsp-server@opam:1.6.1@7a845a2b",
         "@opam/js_of_ocaml-ppx@opam:3.9.0@8454b2f9",
         "@opam/js_of_ocaml@opam:3.9.0@db27df96",
@@ -1669,6 +1669,37 @@
       "devDependencies": [
         "ocaml@4.12.0@d41d8cd9", "@opam/sexplib0@opam:v0.14.0@155c136c",
         "@opam/dune@opam:2.8.5@01003f12", "@opam/base@opam:v0.14.1@9b424fee"
+      ]
+    },
+    "@opam/ounit2@opam:2.2.4@1877225e": {
+      "id": "@opam/ounit2@opam:2.2.4@1877225e",
+      "name": "@opam/ounit2",
+      "version": "opam:2.2.4",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha256/b5/b5c069a5d957220ca0669e945f1e81e6b6db9622766d860913e136e1168e3345#sha256:b5c069a5d957220ca0669e945f1e81e6b6db9622766d860913e136e1168e3345",
+          "archive:https://github.com/gildor478/ounit/releases/download/v2.2.4/ounit-v2.2.4.tbz#sha256:b5c069a5d957220ca0669e945f1e81e6b6db9622766d860913e136e1168e3345"
+        ],
+        "opam": {
+          "name": "ounit2",
+          "version": "2.2.4",
+          "path": "esy.lock/opam/ounit2.2.2.4"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.12.0@d41d8cd9", "@opam/stdlib-shims@opam:0.3.0@0d088929",
+        "@opam/dune@opam:2.8.5@01003f12",
+        "@opam/base-unix@opam:base@87d0b2eb",
+        "@opam/base-bytes@opam:base@19d0c2ff",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.12.0@d41d8cd9", "@opam/stdlib-shims@opam:0.3.0@0d088929",
+        "@opam/dune@opam:2.8.5@01003f12",
+        "@opam/base-unix@opam:base@87d0b2eb",
+        "@opam/base-bytes@opam:base@19d0c2ff"
       ]
     },
     "@opam/octavius@opam:1.2.2@2205cc65": {
