@@ -1,0 +1,28 @@
+{
+  "name": "memory-game",
+  "version": "0.1.0",
+  "description": "Simple memory game implemented with Bonsai",
+  "license": "MIT",
+  "esy": {
+    "build": "dune build --force ./lib/Memory_game.bc.js",
+    "release": {
+      "releasedBinaries": [ "Memory_game.exe" ],
+      "deleteFromBinaryRelease": [ "*esy_ocaml_*", "*refmterr-*", "ocaml-*" ]
+    }
+  },
+  "scripts": {
+    "build:watch": "build ./lib/Memory_game.bc.js -w",
+    "build:prod": "build --profile=prod -f ./lib/Memory_game.bc.js"
+  },
+  "dependencies": {
+    "@opam/async_js": "v0.14.0",
+    "@opam/async_kernel": "v0.14.0",
+    "@opam/bonsai": "v0.14.0",
+    "@opam/core_kernel": "v0.14.1",
+    "@opam/dune": "*",
+    "@opam/js_of_ocaml": "~3.9.0",
+    "@opam/js_of_ocaml-ppx": "~3.9.0",
+    "ocaml": "~4.12.0"
+  },
+  "devDependencies": { "ocaml": "~4.12.0" }
+}
