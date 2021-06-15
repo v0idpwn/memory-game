@@ -4,15 +4,16 @@
   "description": "Simple memory game implemented with Bonsai",
   "license": "MIT",
   "esy": {
-    "build": "dune build --force ./lib/Memory_game.bc.js",
+    "build": "dune build --force ./memory_game/memory_game.bc.js",
     "release": {
-      "releasedBinaries": [ "Memory_game.exe" ],
+      "releasedBinaries": [ "memory_game.exe" ],
       "deleteFromBinaryRelease": [ "*esy_ocaml_*", "*refmterr-*", "ocaml-*" ]
     }
   },
   "scripts": {
-    "build:watch": "build ./lib/Memory_game.bc.js -w",
-    "build:prod": "build --profile=prod -f ./lib/Memory_game.bc.js"
+    "test": "esy b dune runtest",
+    "build:watch": "build ./memory_game/memory_game.bc.js -w",
+    "build:prod": "build --profile=prod -f ./memory_game/memory_game.bc.js"
   },
   "dependencies": {
     "@opam/async_js": "v0.14.0",

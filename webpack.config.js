@@ -6,7 +6,7 @@ const outputDir = path.join(__dirname, 'build/');
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  entry: './_esy/default/build/default/lib/Memory_game.bc.js',
+  entry: './_esy/default/build/default/memory_game/memory_game.bc.js',
   mode: isProd ? 'production' : 'development',
   output: {
     path: outputDir,
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'lib/index.html',
+      template: 'memory_game/index.html',
       inject: false
     }),
     new CopyWebpackPlugin({
