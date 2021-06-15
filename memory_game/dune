@@ -2,6 +2,6 @@
   (name memory_game)
   (modes js exe)
   (libraries virtual_dom core_kernel async_kernel async_js bonsai.web
-  js_of_ocaml)
+  js_of_ocaml game_core)
   (preprocess (pps ppx_jane js_of_ocaml-ppx))
 )

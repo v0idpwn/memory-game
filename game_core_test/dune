@@ -1,0 +1,4 @@
+(test
+  (name game_core_test)
+  (libraries ounit2 game_core)
+)
