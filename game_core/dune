@@ -1,5 +1,5 @@
 (library
   (name game_core)
-  (libraries core_kernel)
+  (libraries base)
   (preprocess (pps ppx_jane))
 )

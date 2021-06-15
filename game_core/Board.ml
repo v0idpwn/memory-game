@@ -1,15 +1,16 @@
-open! Core_kernel
+open! Base;;
 
 type state =
   | Clear
   | CardOpen
   | Won
+[@@deriving sexp, equal]
 
 type t = {
   cards: Card.t Array.t;
   state: state;
   size: int;
-}
+} [@@deriving sexp, equal]
 
 (* Returns a new board *)
 let new_board number_of_pairs =
