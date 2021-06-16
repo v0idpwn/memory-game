@@ -47,6 +47,6 @@ a single pass. They automatically detect the character encoding of the input
 stream, and convert everything to UTF-8."""
 
 url {
-  src: "https://github.com/aantron/markup.ml/archive/1.0.0.tar.gz"
-  checksum: "md5=d9964f196850af5507b66b7a141bff11"
+  src: "https://github.com/aantron/markup.ml/archive/1.0.1.tar.gz"
+  checksum: "md5=1c84ac672d7ad27981235b3ba6d90d3d"
 }

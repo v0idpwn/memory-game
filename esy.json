@@ -6,7 +6,7 @@
   "esy": {
     "build": "dune build --force ./memory_game/memory_game.bc.js",
     "release": {
-      "releasedBinaries": [ "memory_game.exe" ],
+      "releasedBinaries": [ "memory_game.bc.js" ],
       "deleteFromBinaryRelease": [ "*esy_ocaml_*", "*refmterr-*", "ocaml-*" ]
     }
   },
@@ -24,6 +24,7 @@
     "@opam/js_of_ocaml": "~3.9.0",
     "@opam/js_of_ocaml-ppx": "~3.9.0",
     "@opam/ocaml-lsp-server": "1.6.1",
+    "@opam/ocamlformat": "0.18.0",
     "@opam/ounit2": "2.2.4",
     "ocaml": "~4.12.0"
   },
