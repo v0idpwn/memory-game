@@ -58,7 +58,7 @@ let render_card inject idx (card : Card.t) =
 
 let render_play_count play_count =
   let play_count_humanized = Int.to_string (play_count / 2) in
-  Vdom.Node.div []
+  Vdom.Node.div [Vdom.Attr.classes ["has-text-primary"]]
     [
       Vdom.Node.text
         (String.concat ~sep:" " [ "Play count:"; play_count_humanized ]);
@@ -68,7 +68,7 @@ let render_status (state : Board.state) =
   match state with
   | Clear -> Vdom.Node.div [] []
   | CardOpen -> Vdom.Node.div [] []
-  | Won -> Vdom.Node.div [] [ Vdom.Node.text "Won" ]
+  | Won -> Vdom.Node.div [Vdom.Attr.classes ["has-text-primary"]] [ Vdom.Node.text "Won" ]
 
 let compute ~inject _input (model : Model.t) =
   let card_renders =
